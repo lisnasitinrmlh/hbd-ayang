@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
+      overflow:hidden;
+    }
+
+    .card{
+      width:350px;
+      background:white;
+      border-radius:25px;
+      padding:30px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.3);
+      animation: naikTurun 3s ease-in-out infinite;
+    }
+
+    @keyframes naikTurun{
+      0%{
+        transform:translateY(0);
+      }
+      50%{
+        transform:translateY(-10px);
+      }
+      100%{
+        transform:translateY(0);
+      }
+    }
+
+    .photo{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #2563eb;
+      margin-bottom:20px;
+    }
+
+    h1{
+      color:#1d4ed8;
+      margin-bottom:10px;
+      font-size:32px;
+    }
+
+    h2{
+      color:#222;
+      margin-bottom:15px;
+    }
+
+    p{
+      color:#555;
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .icon{
+      font-size:32px;
+      margin-top:20px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.2);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Ganti foto.jpg dengan nama foto kamu -->
+    <img src="foto.jpg" alt="Foto" class="photo">
+
+    <h1>Happy Birthday 🎉</h1>
+    <h2>Untuk Kamu</h2>
+
+    <p>
+      Selamat ulang tahun!  
+      Semoga semua harapan dan impianmu
+      tercapai di tahun ini.
+      Tetap jadi pribadi hebat,
+      kuat, dan membanggakan.
+    </p>
+
+    <div class="icon">🎂</div>
+
+  </div>
+
+</body>
+</html>
